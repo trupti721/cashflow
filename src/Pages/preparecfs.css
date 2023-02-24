@@ -1,0 +1,12 @@
+.tablePosition {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+
+  margin: 5px auto;
+}
+
+.thead {
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}

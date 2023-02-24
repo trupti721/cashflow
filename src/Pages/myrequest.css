@@ -1,0 +1,181 @@
+/* Style the body */
+body {
+  font-family: Arial;
+}
+
+/* whole Column container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+}
+
+/* Main/left column */
+.main {
+  flex: 75%;
+  background-color: #f1f1f1;
+  padding: 20px 40px;
+  max-height: 100vh;
+  overflow-y: scroll; /*to add verical scrollbar*/
+}
+
+/* scrollbar styling*/
+div::-webkit-scrollbar {
+  width: 8px;
+}
+div::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: grey;
+}
+
+/* each row in main column */
+.row {
+  background-color: white;
+  width: 100%;
+  min-height: 120px;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* left element in each row */
+.left {
+  flex: 75%;
+}
+.left p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* right element in each row */
+.right {
+  flex: 25%;
+  padding-left: 10px;
+  border-left: 2px solid gray;
+}
+
+/* circle */
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* style for status (in progress/closed) */
+.inProgress {
+  color: rgb(255, 230, 0);
+  margin-top: 10px;
+}
+.inProgress .dot {
+  background-color: rgb(255, 230, 0);
+}
+.closed {
+  color: green;
+  margin-top: 10px;
+}
+.closed .dot {
+  background-color: green;
+}
+
+/* Sidebar/right column */
+.side {
+  flex: 25%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* each box in sidebar */
+.sideRow {
+  background-color: rgb(223, 219, 219);
+  width: 100%;
+  flex: 50%;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+/* black div */
+.request,
+.help {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* .outerContainer{
+    
+}
+
+.container {
+    border: 2px solid black;
+    width: 90vw;
+    height: auto;
+    margin-left: 15px;
+    display: flex;
+}
+
+.request {
+    
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 10px 5px;
+    text-align: left;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 70%;
+}
+
+.vbar {
+    width: 2px;
+    background-color: gray;
+    height: 120px;
+}
+
+.right {
+    width: 30%;
+    padding-left: 10px;
+}
+
+.request h3 {
+    color: rgb(50, 50, 50);
+
+}
+
+.request p {
+    color: gray;
+}
+
+.raise-help {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+
+    border: 2px solid black;
+} */
